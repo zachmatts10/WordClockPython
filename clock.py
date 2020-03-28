@@ -150,51 +150,51 @@ def twentynine(table):
                         table [n][m] = 1
 
 
-def two(table):
+def Htwo(table):
         for n in range(18, 19):
                 for m in range (0,5):
                         table [n][m] = 1
-def one(table):
+def Hone(table):
         for n in range(18, 19):
                 for m in range (4,9):
                         table [n][m] = 1
-def eleven(table):
+def Heleven(table):
         for n in range(18, 19):
                 for m in range (8,19):
                         table [n][m] = 1
-def nine(table):
+def Hnine(table):
         for n in range(18, 19):
                 for m in range (18,25):
                         table [n][m] = 1
-def six(table):
+def Hsix(table):
         for n in range(18, 19):
                 for m in range (26,31):
                         table [n][m] = 1
-def seven(table):
+def Hseven(table):
         for n in range(20,21):
                 for m in range (0,9):
                         table [n][m] = 1
-def three(table):
+def Hthree(table):
         for n in range(20,21):
                 for m in range (10,19):
                         table [n][m] = 1
-def twelve(table):
+def Htwelve(table):
         for n in range(20,21):
                 for m in range (20,31):
                         table [n][m] = 1
-def four(table):
+def Hfour(table):
         for n in range(22,23):
                 for m in range (0,7):
                         table [n][m] = 1
-def five(table):
+def Hfive(table):
         for n in range(22,23):
                 for m in range (10,17):
                         table [n][m] = 1
-def eight(table):
+def Height(table):
         for n in range(22,23):
                 for m in range (16,25):
                         table [n][m] = 1
-def ten(table):
+def Hten(table):
         for n in range(22,23):
                 for m in range (24,29):
                         table [n][m] = 1
