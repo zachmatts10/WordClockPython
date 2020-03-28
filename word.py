@@ -1,5 +1,5 @@
 # Import functions
-import matrix
+import Matrix
 import clock
 import time
 
