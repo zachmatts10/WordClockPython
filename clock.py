@@ -243,7 +243,7 @@ def night(table):
         for n in range(26,28):
                 for m in range (0,10):
                         table [n][m] = 1
-def the(table):
+def the2(table):
         for n in range(26,28):
                 for m in range (8,16):
                         table [n][m] = 1
