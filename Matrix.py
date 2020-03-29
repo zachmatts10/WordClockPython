@@ -68,10 +68,10 @@ def panel (table):
                 GPIO.output (latch, GPIO.LOW)
 
                 for i in range (32):
-                        if table [j + 16] [i] == 0:
+                        if table [j + 17] [i] == 0:
                                 GPIO.output (clock, GPIO.HIGH)
                                 GPIO.output (clock, GPIO.LOW)
-                        elif table [j + 16] [i] == 1:
+                        elif table [j + 17] [i] == 1:
                                 for a in range (3):
                                         GPIO.output (One [a], GPIO.HIGH)
                                 GPIO.output (clock, GPIO.HIGH)
