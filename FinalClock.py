@@ -36,11 +36,7 @@ class FinalClock(SampleBase):
             if (minute <= 30):
                     if (minute==0):
                             clockListAdd [7] (table)
-                            if (hour<4):
-                                    clockListHour [hour-1] (table)
-                                    clockListAdd [9] (table)
-                                    clockListAdd [10] (table)
-                            elif (hour<12):
+                            if (hour<12):
                                     clockListHour [hour-1] (table)
                                     clockListAdd [8] (table)
                                     clockListAdd [11] (table)
@@ -66,11 +62,7 @@ class FinalClock(SampleBase):
                             clockListMinute [minute-1] (table)
                             clockListAdd [3] (table)
                             clockListAdd [5] (table)
-                            if (hour<4):
-                                    clockListHour [hour-1] (table)
-                                    clockListAdd [9] (table)
-                                    clockListAdd [10] (table)
-                            elif (hour<12):
+                            if (hour<12):
                                     clockListHour [hour-1] (table)
                                     clockListAdd [8] (table)
                                     clockListAdd [11] (table)
@@ -96,11 +88,7 @@ class FinalClock(SampleBase):
                             clockListMinute [minute-1] (table)
                             clockListAdd [4] (table)
                             clockListAdd [5] (table)
-                            if (hour<4):
-                                    clockListHour [hour-1] (table)
-                                    clockListAdd [9] (table)
-                                    clockListAdd [10] (table)
-                            elif (hour<12):
+                            if (hour<12):
                                     clockListHour [hour-1] (table)
                                     clockListAdd [8] (table)
                                     clockListAdd [11] (table)
@@ -127,11 +115,7 @@ class FinalClock(SampleBase):
                     if (minute==59):
                             clockListAdd [3] (table)
                             clockListAdd [6] (table)
-                            if (hour<4):
-                                    clockListHour [hour] (table)
-                                    clockListAdd [9] (table)
-                                    clockListAdd [10] (table)
-                            elif (hour<12):
+                            if (hour<12):
                                     clockListHour [hour] (table)
                                     clockListAdd [8] (table)
                                     clockListAdd [11] (table)
@@ -160,11 +144,7 @@ class FinalClock(SampleBase):
                     else:
                             clockListAdd [4] (table)
                             clockListAdd [6] (table) 
-                            if (hour<4):
-                                    clockListHour [hour] (table)
-                                    clockListAdd [9] (table)
-                                    clockListAdd [10] (table)
-                            elif (hour<12):
+                            if (hour<12):
                                     clockListHour [hour] (table)
                                     clockListAdd [8] (table)
                                     clockListAdd [11] (table)
@@ -191,9 +171,9 @@ class FinalClock(SampleBase):
                                     clockListAdd [9] (table)
                                     clockListAdd [10] (table) 
             for j in range (0, self.matrix.width):
-                    for x in range(0, self.matrix.width):
-                        if table [j] [i] == 1:
-                            offset_canvas.SetPixel(j, i, 255, 255, 255)
+                    for i in range(0, self.matrix.width):
+                        if table [i] [j] == 1:
+                            offset_canvas.SetPixel(self.matrix.width-i-1, self.matrix.height-j-1, 255, 255, 255)
             offset_canvas = self.matrix.SwapOnVSync(offset_canvas)
 
 
