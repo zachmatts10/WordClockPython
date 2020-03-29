@@ -29,7 +29,7 @@ class FinalClock(SampleBase):
             second = int (second)
             day = int (day)
             month = int (month)
-            print (hour, minute, second)
+            #print (hour, minute, second)
             # Create an empty table
             table = [[0 for g in range (33)] for h in range (33)]
             
