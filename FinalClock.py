@@ -4,9 +4,12 @@ import clock
 import datetime
 #import word
 
+clockListMinute = [clock.one, clock.two, clock.three, clock.four, clock.five, clock.six, clock.seven, clock.eight, clock.nine, clock.ten, clock.eleven, clock.twelve, clock.thirteen, clock.fourteen, clock.quarter, clock.sixteen, clock.seventeen, clock.eighteen, clock.nineteen, clock.twenty, clock.twentyone, clock.twentytwo, clock.twentythree, clock.twentyfour, clock.twentyfive, clock.twentysix, clock.twentyseven, clock.twentyeight, clock.twentynine, clock.half] #0-29
+clockListHour = [clock.Hone, clock.Htwo, clock.Hthree, clock.Hfour, clock.Hfive, clock.Hsix, clock.Hseven, clock.Height, clock.Hnine, clock.Hten, clock.Heleven, clock.Htwelve] #0-11
+clockListAdd = [clock.the, clock.time, clock.iss, clock.minute, clock.minutes, clock.past, clock.to, clock.oclock, clock.inn, clock.at, clock.night, clock.the2, clock.morning, clock.evening, clock.afternoon, clock.noon] #0-15
 
-class FinalClock(SampleBase,clock,datetime):
-    def __init__(self, *args, **kwargs):
+
+def __init__(self, *args, **kwargs):
         super(FinalClock, self).__init__(*args, **kwargs)
 
     def run(self):
