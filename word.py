@@ -40,29 +40,29 @@ while True:
                 if (minute==0):
                         clockListAdd [7] (table)
                         if (hour<4):
-                                clockListHour [hour] (table)
+                                clockListHour [hour-1] (table)
                                 clockListAdd [9] (table)
                                 clockListAdd [10] (table)
                         elif (hour<12):
-                                clockListHour [hour] (table)
+                                clockListHour [hour-1] (table)
                                 clockListAdd [8] (table)
                                 clockListAdd [11] (table)
                                 clockListAdd [12] (table)
                         elif (hour==12):
-                                clockListHour [hour] (table)
+                                clockListHour [hour-1] (table)
                                 clockListAdd [15] (table)
                         elif (hour<17):
-                                clockListHour [hour-12] (table)
+                                clockListHour [hour-13] (table)
                                 clockListAdd [8] (table)
                                 clockListAdd [11] (table)
                                 clockListAdd [14] (table)
                         elif (hour<20):
-                                clockListHour [hour-12] (table)
+                                clockListHour [hour-13] (table)
                                 clockListAdd [8] (table)
                                 clockListAdd [11] (table)
                                 clockListAdd [13] (table)
                         elif (hour>=20):
-                                clockListHour [hour-12] (table)
+                                clockListHour [hour-13] (table)
                                 clockListAdd [9] (table)
                                 clockListAdd [10] (table)
                 elif (minute==1):
@@ -70,29 +70,29 @@ while True:
                         clockListAdd [3] (table)
                         clockListAdd [5] (table)
                         if (hour<4):
-                                clockListHour [hour] (table)
+                                clockListHour [hour-1] (table)
                                 clockListAdd [9] (table)
                                 clockListAdd [10] (table)
                         elif (hour<12):
-                                clockListHour [hour] (table)
+                                clockListHour [hour-1] (table)
                                 clockListAdd [8] (table)
                                 clockListAdd [11] (table)
                                 clockListAdd [12] (table)
                         elif (hour==12):
-                                clockListHour [hour] (table)
+                                clockListHour [hour-1] (table)
                                 clockListAdd [15] (table)
                         elif (hour<17):
-                                clockListHour [hour-12] (table)
+                                clockListHour [hour-13] (table)
                                 clockListAdd [8] (table)
                                 clockListAdd [11] (table)
                                 clockListAdd [14] (table)
                         elif (hour<20):
-                                clockListHour [hour-12] (table)
+                                clockListHour [hour-13] (table)
                                 clockListAdd [8] (table)
                                 clockListAdd [11] (table)
                                 clockListAdd [13] (table)
                         elif (hour>=20):
-                                clockListHour [hour-12] (table)
+                                clockListHour [hour-13] (table)
                                 clockListAdd [9] (table)
                                 clockListAdd [10] (table)
                 else:
@@ -100,29 +100,29 @@ while True:
                         clockListAdd [4] (table)
                         clockListAdd [5] (table)
                         if (hour<4):
-                                clockListHour [hour] (table)
+                                clockListHour [hour-1] (table)
                                 clockListAdd [9] (table)
                                 clockListAdd [10] (table)
                         elif (hour<12):
-                                clockListHour [hour] (table)
+                                clockListHour [hour-1] (table)
                                 clockListAdd [8] (table)
                                 clockListAdd [11] (table)
                                 clockListAdd [12] (table)
                         elif (hour==12):
-                                clockListHour [hour] (table)
+                                clockListHour [hour-1] (table)
                                 clockListAdd [15] (table)
                         elif (hour<17):
-                                clockListHour [hour-12] (table)
+                                clockListHour [hour-13] (table)
                                 clockListAdd [8] (table)
                                 clockListAdd [11] (table)
                                 clockListAdd [14] (table)
                         elif (hour<20):
-                                clockListHour [hour-12] (table)
+                                clockListHour [hour-13] (table)
                                 clockListAdd [8] (table)
                                 clockListAdd [11] (table)
                                 clockListAdd [13] (table)
                         elif (hour>=20):
-                                clockListHour [hour-12] (table)
+                                clockListHour [hour-13] (table)
                                 clockListAdd [9] (table)
                                 clockListAdd [10] (table)
         elif (minute > 30):
@@ -131,29 +131,29 @@ while True:
                         clockListAdd [3] (table)
                         clockListAdd [6] (table)
                         if (hour<4):
-                                clockListHour [hour+1] (table)
+                                clockListHour [hour] (table)
                                 clockListAdd [9] (table)
                                 clockListAdd [10] (table)
                         elif (hour<12):
-                                clockListHour [hour+1] (table)
+                                clockListHour [hour] (table)
                                 clockListAdd [8] (table)
                                 clockListAdd [11] (table)
                                 clockListAdd [12] (table)
                         elif (hour==12):
-                                clockListHour [hour+1] (table)
+                                clockListHour [hour] (table)
                                 clockListAdd [15] (table)
                         elif (hour<17):
-                                clockListHour [hour+1] (table)
+                                clockListHour [hour-12] (table)
                                 clockListAdd [8] (table)
                                 clockListAdd [11] (table)
                                 clockListAdd [14] (table)
                         elif (hour<20):
-                                clockListHour [hour+1] (table)
+                                clockListHour [hour-12] (table)
                                 clockListAdd [8] (table)
                                 clockListAdd [11] (table)
                                 clockListAdd [13] (table)
                         elif (hour<23):
-                                clockListHour [hour+1] (table)
+                                clockListHour [hour-12] (table)
                                 clockListAdd [9] (table)
                                 clockListAdd [10] (table)
                         elif (hour==23):
@@ -164,29 +164,29 @@ while True:
                         clockListAdd [4] (table)
                         clockListAdd [6] (table) 
                         if (hour<4):
-                                clockListHour [hour+1] (table)
+                                clockListHour [hour] (table)
                                 clockListAdd [9] (table)
                                 clockListAdd [10] (table)
                         elif (hour<12):
-                                clockListHour [hour+1] (table)
+                                clockListHour [hour] (table)
                                 clockListAdd [8] (table)
                                 clockListAdd [11] (table)
                                 clockListAdd [12] (table)
                         elif (hour==12):
-                                clockListHour [hour+1] (table)
+                                clockListHour [hour] (table)
                                 clockListAdd [15] (table)
                         elif (hour<17):
-                                clockListHour [hour-11] (table)
+                                clockListHour [hour-12] (table)
                                 clockListAdd [8] (table)
                                 clockListAdd [11] (table)
                                 clockListAdd [14] (table)
                         elif (hour<20):
-                                clockListHour [hour-11] (table)
+                                clockListHour [hour-12] (table)
                                 clockListAdd [8] (table)
                                 clockListAdd [11] (table)
                                 clockListAdd [13] (table)
                         elif (hour<23):
-                                clockListHour [hour-11] (table)
+                                clockListHour [hour-12] (table)
                                 clockListAdd [9] (table)
                                 clockListAdd [10] (table)
                         elif (hour==23):
