@@ -28,6 +28,7 @@ while True:
         hour = int (hour)
         minute = int (minute)
         second = int (second)
+        print (hour minute second)
         # Create an empty table
         table = [[0 for g in range (32)] for h in range (32)]
         # It is always lit.
