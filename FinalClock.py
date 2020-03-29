@@ -111,6 +111,8 @@ class FinalClock(SampleBase):
                     for i in range(0, self.matrix.width):
                         if table [j] [i] == 1:
                             offset_canvas.SetPixel(self.matrix.width-j-1,i, 255, 255, 255)
+                        else:
+                            offset_canvas.SetPixel(self.matrix.width-j-1,i,0,0,0)                                               
             offset_canvas = self.matrix.SwapOnVSync(offset_canvas)
 
 
