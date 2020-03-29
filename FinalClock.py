@@ -40,13 +40,13 @@ class FinalClock(SampleBase):
                             clockListMinute [minute-1] (table)
                             clockListAdd [3] (table)
                             clockListAdd [5] (table)
-                    elif (minute==15 or minute==30)
+                    elif (minute==15 or minute==30):
                             clockListAdd [5] (table)
                     else:
                             clockListMinute [minute-1] (table)
                             if (minute ==15 or minute ==30):
                                 clockListAdd [5] (table)
-                            elif:
+                            else:
                                 clockListAdd [4] (table)
                                 clockListAdd [5] (table)
                     if (hour<12):
@@ -76,7 +76,7 @@ class FinalClock(SampleBase):
                     if (minute==59):
                             clockListAdd [3] (table)
                             clockListAdd [6] (table)
-                    elif (minute==45)
+                    elif (minute==45):
                             clockListAdd [6] (table)
                     else:
                             clockListAdd [4] (table)
