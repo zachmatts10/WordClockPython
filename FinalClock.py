@@ -10,7 +10,7 @@ clockListAdd = [clock.the, clock.time, clock.iss, clock.minute, clock.minutes, c
 
 class FinalClock(SampleBase):
     def __init__(self, *args, **kwargs):
-        super(SimpleSquare, self).__init__(*args, **kwargs)
+        super(FinalClock, self).__init__(*args, **kwargs)
 
     def run(self):
         offset_canvas = self.matrix.CreateFrameCanvas()
@@ -109,8 +109,8 @@ class FinalClock(SampleBase):
                             clockListAdd [10] (table) 
             for j in range (0, self.matrix.width):
                     for i in range(0, self.matrix.width):
-                        if table [i] [j] == 1:
-                            offset_canvas.SetPixel(self.matrix.width-i-1, self.matrix.height-j-1, 255, 255, 255)
+                        if table [j] [i] == 1:
+                            offset_canvas.SetPixel(self.matrix.width-j-1,i, 255, 255, 255)
             offset_canvas = self.matrix.SwapOnVSync(offset_canvas)
 
 
