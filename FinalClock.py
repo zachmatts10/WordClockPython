@@ -36,140 +36,77 @@ class FinalClock(SampleBase):
             if (minute <= 30):
                     if (minute==0):
                             clockListAdd [7] (table)
-                            if (hour<12):
-                                    clockListHour [hour-1] (table)
-                                    clockListAdd [8] (table)
-                                    clockListAdd [11] (table)
-                                    clockListAdd [12] (table)
-                            elif (hour==12):
-                                    clockListHour [hour-1] (table)
-                                    clockListAdd [15] (table)
-                            elif (hour<17):
-                                    clockListHour [hour-13] (table)
-                                    clockListAdd [8] (table)
-                                    clockListAdd [11] (table)
-                                    clockListAdd [14] (table)
-                            elif (hour<20):
-                                    clockListHour [hour-13] (table)
-                                    clockListAdd [8] (table)
-                                    clockListAdd [11] (table)
-                                    clockListAdd [13] (table)
-                            elif (hour>=20):
-                                    clockListHour [hour-13] (table)
-                                    clockListAdd [9] (table)
-                                    clockListAdd [10] (table)
                     elif (minute==1):
                             clockListMinute [minute-1] (table)
                             clockListAdd [3] (table)
                             clockListAdd [5] (table)
-                            if (hour<12):
-                                    clockListHour [hour-1] (table)
-                                    clockListAdd [8] (table)
-                                    clockListAdd [11] (table)
-                                    clockListAdd [12] (table)
-                            elif (hour==12):
-                                    clockListHour [hour-1] (table)
-                                    clockListAdd [15] (table)
-                            elif (hour<17):
-                                    clockListHour [hour-13] (table)
-                                    clockListAdd [8] (table)
-                                    clockListAdd [11] (table)
-                                    clockListAdd [14] (table)
-                            elif (hour<20):
-                                    clockListHour [hour-13] (table)
-                                    clockListAdd [8] (table)
-                                    clockListAdd [11] (table)
-                                    clockListAdd [13] (table)
-                            elif (hour>=20):
-                                    clockListHour [hour-13] (table)
-                                    clockListAdd [9] (table)
-                                    clockListAdd [10] (table)
+                    elif (minute =15 or minute =30)
+                            clockListAdd [5] (table)
                     else:
                             clockListMinute [minute-1] (table)
-                            clockListAdd [4] (table)
-                            clockListAdd [5] (table)
-                            if (hour<12):
-                                    clockListHour [hour-1] (table)
-                                    clockListAdd [8] (table)
-                                    clockListAdd [11] (table)
-                                    clockListAdd [12] (table)
-                            elif (hour==12):
-                                    clockListHour [hour-1] (table)
-                                    clockListAdd [15] (table)
-                            elif (hour<17):
-                                    clockListHour [hour-13] (table)
-                                    clockListAdd [8] (table)
-                                    clockListAdd [11] (table)
-                                    clockListAdd [14] (table)
-                            elif (hour<20):
-                                    clockListHour [hour-13] (table)
-                                    clockListAdd [8] (table)
-                                    clockListAdd [11] (table)
-                                    clockListAdd [13] (table)
-                            elif (hour>=20):
-                                    clockListHour [hour-13] (table)
-                                    clockListAdd [9] (table)
-                                    clockListAdd [10] (table)
+                            if (minute ==15 or minute ==30):
+                                clockListAdd [5] (table)
+                            elif:
+                                clockListAdd [4] (table)
+                                clockListAdd [5] (table)
+                    if (hour<12):
+                            clockListHour [hour-1] (table)
+                            clockListAdd [8] (table)
+                            clockListAdd [11] (table)
+                            clockListAdd [12] (table)
+                    elif (hour==12):
+                            clockListHour [hour-1] (table)
+                            clockListAdd [15] (table)
+                    elif (hour<17):
+                            clockListHour [hour-13] (table)
+                            clockListAdd [8] (table)
+                            clockListAdd [11] (table)
+                            clockListAdd [14] (table)
+                    elif (hour<20):
+                            clockListHour [hour-13] (table)
+                            clockListAdd [8] (table)
+                            clockListAdd [11] (table)
+                            clockListAdd [13] (table)
+                    elif (hour>=20):
+                            clockListHour [hour-13] (table)
+                            clockListAdd [9] (table)
+                            clockListAdd [10] (table)
             elif (minute > 30):
                     clockListMinute [59-minute] (table)
                     if (minute==59):
                             clockListAdd [3] (table)
                             clockListAdd [6] (table)
-                            if (hour<12):
-                                    clockListHour [hour] (table)
-                                    clockListAdd [8] (table)
-                                    clockListAdd [11] (table)
-                                    clockListAdd [12] (table)
-                            elif (hour==12):
-                                    clockListHour [hour] (table)
-                                    clockListAdd [15] (table)
-                            elif (hour<17):
-                                    clockListHour [hour-12] (table)
-                                    clockListAdd [8] (table)
-                                    clockListAdd [11] (table)
-                                    clockListAdd [14] (table)
-                            elif (hour<20):
-                                    clockListHour [hour-12] (table)
-                                    clockListAdd [8] (table)
-                                    clockListAdd [11] (table)
-                                    clockListAdd [13] (table)
-                            elif (hour<23):
-                                    clockListHour [hour-12] (table)
-                                    clockListAdd [9] (table)
-                                    clockListAdd [10] (table)
-                            elif (hour==23):
-                                    clockListHour [0] (table)
-                                    clockListAdd [9] (table)
-                                    clockListAdd [10] (table)        
+                    elif (minute==45)
+                            clockListAdd [6] (table)
                     else:
                             clockListAdd [4] (table)
                             clockListAdd [6] (table) 
-                            if (hour<12):
-                                    clockListHour [hour] (table)
-                                    clockListAdd [8] (table)
-                                    clockListAdd [11] (table)
-                                    clockListAdd [12] (table)
-                            elif (hour==12):
-                                    clockListHour [hour] (table)
-                                    clockListAdd [15] (table)
-                            elif (hour<17):
-                                    clockListHour [hour-12] (table)
-                                    clockListAdd [8] (table)
-                                    clockListAdd [11] (table)
-                                    clockListAdd [14] (table)
-                            elif (hour<20):
-                                    clockListHour [hour-12] (table)
-                                    clockListAdd [8] (table)
-                                    clockListAdd [11] (table)
-                                    clockListAdd [13] (table)
-                            elif (hour<23):
-                                    clockListHour [hour-12] (table)
-                                    clockListAdd [9] (table)
-                                    clockListAdd [10] (table)
-                            elif (hour==23):
-                                    clockListHour [0] (table)
-                                    clockListAdd [9] (table)
-                                    clockListAdd [10] (table) 
+                    if (hour<12):
+                            clockListHour [hour] (table)
+                            clockListAdd [8] (table)
+                            clockListAdd [11] (table)
+                            clockListAdd [12] (table)
+                    elif (hour==12):
+                            clockListHour [hour] (table)
+                            clockListAdd [15] (table)
+                    elif (hour<17):
+                            clockListHour [hour-12] (table)
+                            clockListAdd [8] (table)
+                            clockListAdd [11] (table)
+                            clockListAdd [14] (table)
+                    elif (hour<20):
+                            clockListHour [hour-12] (table)
+                            clockListAdd [8] (table)
+                            clockListAdd [11] (table)
+                            clockListAdd [13] (table)
+                    elif (hour<23):
+                            clockListHour [hour-12] (table)
+                            clockListAdd [9] (table)
+                            clockListAdd [10] (table)
+                    elif (hour==23):
+                            clockListHour [0] (table)
+                            clockListAdd [9] (table)
+                            clockListAdd [10] (table) 
             for j in range (0, self.matrix.width):
                     for i in range(0, self.matrix.width):
                         if table [i] [j] == 1:
