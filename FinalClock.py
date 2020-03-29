@@ -8,9 +8,9 @@ clockListMinute = [clock.one, clock.two, clock.three, clock.four, clock.five, cl
 clockListHour = [clock.Hone, clock.Htwo, clock.Hthree, clock.Hfour, clock.Hfive, clock.Hsix, clock.Hseven, clock.Height, clock.Hnine, clock.Hten, clock.Heleven, clock.Htwelve] #0-11
 clockListAdd = [clock.the, clock.time, clock.iss, clock.minute, clock.minutes, clock.past, clock.to, clock.oclock, clock.inn, clock.at, clock.night, clock.the2, clock.morning, clock.evening, clock.afternoon, clock.noon] #0-15
 
-
-def __init__(self, *args, **kwargs):
-        super(FinalClock, self).__init__(*args, **kwargs)
+class FinalClock(SampleBase):
+    def __init__(self, *args, **kwargs):
+        super(SimpleSquare, self).__init__(*args, **kwargs)
 
     def run(self):
         offset_canvas = self.matrix.CreateFrameCanvas()
