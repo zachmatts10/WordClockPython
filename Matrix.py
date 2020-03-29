@@ -10,7 +10,7 @@ GPIO.setwarnings (False)
 
 #Pins as variables Adjust if the pink configuration changes
 redZero = 11
-greenZero = 21
+greenZero = 27
 blueZero = 7
 redOne = 8
 greenOne = 9
