@@ -30,7 +30,7 @@ while True:
         second = int (second)
         print (hour, minute, second)
         # Create an empty table
-        table = [[0 for g in range (32)] for h in range (32)]
+        table = [[0 for g in range (33)] for h in range (33)]
         # It is always lit.
         clockListAdd [0] (table)
         clockListAdd [1] (table)
