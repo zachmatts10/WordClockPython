@@ -262,5 +262,15 @@ def afternoon(table):
 def noon(table):
         for n in range(28,30):
                 for m in range (24,32):
+                        table [n][m] = 1                     
+def anniversary(table):
+        for n in range(0,2):
+                for m in range (0,32)
                         table [n][m] = 1
-                        
+def birthday(table):
+        for n in range(30,32):
+                for m in range (2,12)
+                        table [n][m] = 1
+        for n in range(30,32):
+                for m in range (14,30)
+                        table [n][m] = 1
