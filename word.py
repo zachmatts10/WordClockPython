@@ -1,7 +1,7 @@
 # Import functions
 import Matrix
 import clock
-import time
+import datetime
 
 clockList = [clock.one, clock.two, clock.three, clock.four, clock.five, clock.six, clock.seven, clock.eight, clock.nine, clock.ten, clock.eleven, clock.twelve, clock.thirteen, clock.fourteen, clock.quarter, clock.sixteen, clock.seventeen, clock.eighteen, clock.nineteen, clock.twenty, clock.twentyone, clock.twentytwo, clock.twentythree, clock.twenty.four, clock.twentyfive, clock.twentysix, clock.twentyseven, clock.twentyeight, clock.twentynine, clock.half, clock.Hone, clock.Htwo, clock.Hthree, clock.Hfour, clock.Hfive, clock.Hsix, clock.Hseven, clock.Height, clock.Hnine, clock.Hten, clock.Heleven, clock.Htwelve, clock.the, clock.time, clock.iss, clock.minute, clock.minutes, clock.past, clock.to, clock.oclock, clock.inn, clock.at, clock.night, clock.the, clock.morning, clock.evening, clock.afternoon]
 clockListMinute = [clock.one, clock.two, clock.three, clock.four, clock.five, clock.six, clock.seven, clock.eight, clock.nine, clock.ten, clock.eleven, clock.twelve, clock.thirteen, clock.fourteen, clock.quarter, clock.sixteen, clock.seventeen, clock.eighteen, clock.nineteen, clock.twenty, clock.twentyone, clock.twentytwo, clock.twentythree, clock.twentyfour, clock.twentyfive, clock.twentysix, clock.twentyseven, clock.twentyeight, clock.twentynine, clock.half] #0-29
@@ -20,11 +20,11 @@ for m in clockList:
 # simple endless loop East German system
 while True:
         # Record local time in the RPi
-        time = time.localtime ()
+        time = datetime.datetime.now ()
         # Set variables for hours, minutes, seconds
-        hour = time.strftime ("%H", time)
-        minute = time.strftime ("%M", time)
-        second = time.strftime ("%S", time)
+        hour = time.strftime ("%H")
+        minute = time.strftime ("%M")
+        second = time.strftime ("%S")
         # Make the whole thing available as an integer
         hour = int (hour)
         minute = int (minute)
@@ -176,17 +176,17 @@ while True:
                                 clockListHour [hour+1] (table)
                                 clockListAdd [15] (table)
                         elif (hour<17):
-                                clockListHour [hour+1] (table)
+                                clockListHour [hour-11] (table)
                                 clockListAdd [8] (table)
                                 clockListAdd [11] (table)
                                 clockListAdd [14] (table)
                         elif (hour<20):
-                                clockListHour [hour+1] (table)
+                                clockListHour [hour-11] (table)
                                 clockListAdd [8] (table)
                                 clockListAdd [11] (table)
                                 clockListAdd [13] (table)
                         elif (hour<23):
-                                clockListHour [hour+1] (table)
+                                clockListHour [hour-11] (table)
                                 clockListAdd [9] (table)
                                 clockListAdd [10] (table)
                         elif (hour==23):
@@ -194,11 +194,11 @@ while True:
                                 clockListAdd [9] (table)
                                 clockListAdd [10] (table)           
 
-        for n in range (30-second, 30):
-                table [n-2] [2] = 1
-        if (30 <= second <= 60):
-                for n in range (second-30):
-                        table [n] [29] = 1
+#        for n in range (30-second, 30):
+#               table [n-2] [2] = 1
+#        if (30 <= second <= 60):
+#                for n in range (second-30):
+#                        table [n] [29] = 1
 
 
         Matrix.panel (table)
