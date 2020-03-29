@@ -245,7 +245,7 @@ def night(table):
                         table [n][m] = 1
 def the2(table):
         for n in range(26,28):
-                for m in range (8,16):
+                for m in range (8,14):
                         table [n][m] = 1
 def morning(table):
         for n in range(26,28):
