@@ -33,8 +33,8 @@ class FinalClock(SampleBase):
             # Create an empty table
             table = [[0 for g in range (33)] for h in range (33)]
             
-            Anniversary = 29
-            BirthDay = 29
+            Anniversary = 30
+            BirthDay = 30
             BirthMonth = 3
             
             
@@ -45,7 +45,7 @@ class FinalClock(SampleBase):
 
             if (day == Anniversary):
                     clockListAdd [16] (table)
-            elif (month == BirthMonth and day == BirthDay):
+            elif (month == BirthMonth) and (day == BirthDay):
                     clockListAdd [17] (table)
                       
             if (minute <= 30):
