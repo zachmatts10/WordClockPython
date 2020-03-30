@@ -264,13 +264,13 @@ def noon(table):
                 for m in range (24,32):
                         table [n][m] = 1                     
 def anniversary(table):
-        for n in range(0,2):
+        for n in range(30,32):
                 for m in range (0,32)
                         table [n][m] = 1
 def birthday(table):
-        for n in range(30,32):
+        for n in range(0,2):
                 for m in range (2,12)
                         table [n][m] = 1
-        for n in range(30,32):
+        for n in range(0,2):
                 for m in range (14,30)
                         table [n][m] = 1
