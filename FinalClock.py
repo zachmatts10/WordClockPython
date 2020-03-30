@@ -29,7 +29,7 @@ class FinalClock(SampleBase):
             second = int (second)
             day = int (day)
             month = int (month)
-            #print (hour, minute, second)
+            #print (hour, minute, second, day, month)
             # Create an empty table
             table = [[0 for g in range (33)] for h in range (33)]
             
@@ -119,9 +119,9 @@ class FinalClock(SampleBase):
                             clockListAdd [9] (table)
                             clockListAdd [10] (table)
                     elif (hour==23):
-                            clockListHour [0] (table)
-                            clockListAdd [9] (table)
-                            clockListAdd [10] (table) 
+                            clockListAdd [8] (table)
+                            clockListAdd [11] (table)
+                            clockListAdd [12] (table)
             for j in range (0, self.matrix.width):
                     for i in range(0, self.matrix.width):
                         if table [j] [i] == 1:
