@@ -102,7 +102,7 @@ class FinalClock(SampleBase):
                             clockListAdd [11] (table)
                             clockListAdd [12] (table)
                     elif (hour==12):
-                            clockListHour [hour] (table)
+                            clockListHour [0] (table)
                             clockListAdd [15] (table)
                     elif (hour<17):
                             clockListHour [hour-12] (table)
