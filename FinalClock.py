@@ -120,9 +120,8 @@ class FinalClock(SampleBase):
                             clockListAdd [10] (table)
                     elif (hour==23):
                             clockListHour [hour-12] (table)
-                            clockListAdd [8] (table)
-                            clockListAdd [11] (table)
-                            clockListAdd [12] (table)
+                            clockListAdd [9] (table)
+                            clockListAdd [10] (table)
             for j in range (0, self.matrix.width):
                     for i in range(0, self.matrix.width):
                         if table [j] [i] == 1:
